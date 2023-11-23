@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    width: 600px;
+    display: flex;
+    box-shadow: 0 0 50px 0 hsl(221, 100%, 96%);
+    border-radius: 30px;
+}
+.left{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 30px;
+}
+.left h4{
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+    font-size: 18px;
+}
+.circle{
+    margin: 0 auto;
+    padding: 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-text{
+    font-weight: bold;
+    font-size: 60px;
+}
+.small-text{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500px;
+}
+.left p{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+.right{
+    width:50%;
+    padding: 20px;
+}
+.right h4{
+    font-size: 20px;
+}
+.score-reaction,.score-memory,.score-verbal,.score-Visual{
+    display: flex;
+    justify-content: space-between;
+    background-color:  hsl(0, 100%, 67%,0.1);
+    color:  hsl(0, 100%, 67%);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.score-left{
+    display: flex;
+}
+.score-left img{
+    margin-right: 5px;
+}
+.score-right .dark{
+    color: #000;
+    font-weight: 800;
+}
+.score-right .grey{
+    color: hsl(224, 30%, 27%,0.4);
+    font-weight: 500px;
+}
+button{
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: hsl(224, 30%, 27%);
+}
+@media (max-width:700px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .right{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
